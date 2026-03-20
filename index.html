@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quality Outfitters</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+
+<!-- NAV -->
+<header>
+    <div class="logo">Quality Outfitters</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <canvas id="smokeCanvas"></canvas>
+
+    <div class="hero-container">
+
+        <!-- LEFT -->
+        <div class="hero-content" data-aos="fade-up">
+            <h1>
+                Elegance <br>
+                <span>Redefined</span>
+            </h1>
+
+            <p>
+                Premium suits, handcrafted shoes, and refined accessories 
+                designed for the modern gentleman.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#products" class="btn-glow">Shop Collection</a>
+                <a href="#contact" class="btn-outline">Book Consultation</a>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-image" data-aos="fade-left">
+            <img src="images/model.png" alt="Luxury Suit Model">
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products">
+    <h2 data-aos="fade-up">Our Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card" data-aos="fade-up">
+            <img src="images/suit1.jpg">
+            <div class="overlay">
+                <h3>Classic Black Suit</h3>
+                <button class="btn-glow">View</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up">
+            <img src="images/tie1.jpg">
+            <div class="overlay">
+                <h3>Luxury Silk Tie</h3>
+                <button class="btn-glow">View</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up">
+            <img src="images/shoes1.jpg">
+            <div class="overlay">
+                <h3>Leather Shoes</h3>
+                <button class="btn-glow">View</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-aos="fade-up">
+            <img src="images/suit2.jpg">
+            <div class="overlay">
+                <h3>Modern Grey Suit</h3>
+                <button class="btn-glow">View</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2 data-aos="fade-up">Contact Us</h2>
+
+    <form data-aos="fade-up">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn-glow">Send Message</button>
+    </form>
+
+    <div class="socials">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Quality Outfitters</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>
+<script>AOS.init({duration:1000,once:true});</script>
+
+</body>
+</html>
