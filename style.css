@@ -1,0 +1,134 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#fff;
+}
+
+/* Cursor */
+#cursor{
+    width:18px;height:18px;border-radius:50%;
+    position:fixed;pointer-events:none;
+    background:#fff;
+    box-shadow:0 0 20px #ff0077;
+    transform:translate(-50%,-50%);
+    z-index:9999;
+}
+
+/* NAV */
+header{
+    position:fixed;width:100%;
+    display:flex;justify-content:space-between;
+    padding:1rem 2rem;
+    background:rgba(0,0,0,0.8);
+    z-index:1000;
+}
+
+.logo{color:#d4af37;font-weight:400;}
+
+nav ul{display:flex;list-style:none;}
+nav ul li{margin:0 1rem;}
+nav a{color:#fff;text-decoration:none;}
+
+.hamburger{display:none;flex-direction:column;cursor:pointer;}
+.hamburger div{width:25px;height:3px;background:#fff;margin:4px;}
+
+/* HERO */
+.hero{min-height:100vh;position:relative;overflow:hidden;}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    padding:0 8%;
+    min-height:100vh;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:400;
+}
+
+.hero-content span{
+    color:#d4af37;
+}
+
+.hero-content p{
+    margin:1.5rem 0;
+    color:#ccc;
+}
+
+.hero-buttons{display:flex;gap:1rem;}
+
+.btn-glow{
+    padding:0.7rem 2rem;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#ff0077,#ff77ff);
+    color:#fff;
+    cursor:pointer;
+    box-shadow:0 0 15px #ff0077;
+}
+
+.btn-outline{
+    border:1px solid #d4af37;
+    color:#d4af37;
+    padding:0.7rem 2rem;
+    border-radius:50px;
+}
+
+/* IMAGE */
+.hero-image img{
+    width:90%;
+    filter:drop-shadow(0 20px 40px rgba(0,0,0,0.8));
+}
+
+/* PRODUCTS */
+.products{padding:5rem 2rem;text-align:center;}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:2rem;
+}
+
+.product-card{position:relative;overflow:hidden;}
+
+.product-card img{width:100%;}
+
+.overlay{
+    position:absolute;top:0;left:0;width:100%;height:100%;
+    background:rgba(0,0,0,0.7);
+    display:flex;flex-direction:column;
+    justify-content:center;align-items:center;
+    opacity:0;transition:0.3s;
+}
+
+.product-card:hover .overlay{opacity:1;}
+
+/* CONTACT */
+.contact{text-align:center;padding:5rem 2rem;}
+
+.contact form{
+    display:flex;flex-direction:column;
+    max-width:500px;margin:auto;
+}
+
+.contact input,.contact textarea{
+    margin:0.5rem 0;padding:0.8rem;
+    border:none;border-radius:8px;
+}
+
+.socials a{
+    margin:0 1rem;color:#fff;font-size:1.5rem;
+}
+
+/* FOOTER */
+footer{text-align:center;padding:2rem;}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero-container{grid-template-columns:1fr;text-align:center;}
+    .hamburger{display:flex;}
+}
